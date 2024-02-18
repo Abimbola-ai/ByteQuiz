@@ -17,6 +17,12 @@ body {
   text-align: center;
 }
 
+.wrapper-scores {
+  display: flex;
+  height: 100vh;
+  background: #302326;
+}
+
 .project-title {
   text-transform: uppercase;
   font-weight: 700;
