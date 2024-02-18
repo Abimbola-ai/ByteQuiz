@@ -168,3 +168,18 @@ body {
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .project-title,
+  .header {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .btn {
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+
+    letter-spacing: 0.2rem;
+  }
+}
