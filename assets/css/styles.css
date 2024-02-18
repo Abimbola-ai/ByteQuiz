@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  height: 100vh;
+  background-image: url(/assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #f3edfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6rem;
+  letter-spacing: 1rem;
+}
+.header {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 300;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.project-title span:nth-child(1),
+.project-title span:nth-child(5) {
+  color: #db7558;
+}
+
+.project-title span:nth-child(2),
+.project-title span:nth-child(6) {
+  color: #ffcf57;
+}
+.project-title span:nth-child(3),
+.project-title span:nth-child(7) {
+  color: #8fcdd4;
+}
+.project-title span:nth-child(4),
+.project-title span:nth-child(8) {
+  color: #f6acb6;
+}
+
+.btn {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  letter-spacing: 0.25rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #db7558;
+}
+
+/* Quiz Section */
+#introduction {
+  background: #faeadd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+.quiz {
+  width: 80%;
+}
+
+#start-screen h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+#start-screen p {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 2rem;
+}
+
+#question-title {
+  font-family: 'Inter', sans-serif;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+.choices button {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 2rem;
+  display: block;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.choices button:hover {
+  background: #db7558;
+  color: #fff;
+}
+
+.choices button:active {
+  background: #db7558;
+  color: #fff;
+}
+
+#timer {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+#feedback {
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+#end-screen {
+  text-align: center;
+}
+
+#end-screen h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+#end-screen p,
+#final-score {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 1.5rem;
+}
+
+#final-score {
+  color: #db7558;
+}
