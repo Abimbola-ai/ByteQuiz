@@ -1,5 +1,4 @@
 // import { questions } from './questions'
-//questions.js
 // list of all questions, choices, and answers
 const questions = [
   {
@@ -43,7 +42,6 @@ let timerId
 let finalScore = 0
 
 // add variables to reference DOM elements
-// example is below
 let questionsEl = document.getElementById('questions')
 
 // reference the sound effects
@@ -51,7 +49,7 @@ let sfxRight = new Audio('assets/sfx/correct.wav')
 let sfxWrong = new Audio('assets/sfx/incorrect.wav')
 
 function startQuiz() {
-  console.log('Start quiz button clicked')
+  // console.log('Start quiz button clicked')
   // hide start screen
   document.getElementById('start-screen').classList.add('hide')
 
@@ -168,7 +166,7 @@ function updateTimerDisplay() {
   document.getElementById('time').textContent = time
 }
 
-// complete the steps to save the high score
+//steps to save the high score
 
 function saveHighScore() {
   // get the value of the initials input box

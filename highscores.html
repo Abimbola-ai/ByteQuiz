@@ -18,11 +18,22 @@
 
   <body>
     <div class="wrapper-scores">
-      <h1>Highscores</h1>
-      <ol id="highscores"></ol>
+      <div class="scores">
+        <h1>High Scores</h1>
+        <ol id="highscores"></ol>
 
-      <a href="index.html"><button class="btn">Go Back</button></a>
-      <button class="btn" id="clear">Clear Highscores</button>
+        <div class="btn-container">
+          <button
+            onclick="window.location.href='index.html'"
+            class="btn btn-highscores"
+          >
+            Go Back
+          </button>
+          <button class="btn btn-highscores" id="clear">
+            Clear Highscores
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/js/scores.js"></script>

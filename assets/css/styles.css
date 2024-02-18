@@ -21,6 +21,9 @@ body {
   display: flex;
   height: 100vh;
   background: #302326;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-title {
@@ -140,17 +143,28 @@ body {
   text-align: center;
 }
 
-#end-screen h2 {
+#end-screen h2,
+.wrapper-scores h1 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 500;
   font-size: 2rem;
 }
 #end-screen p,
-#final-score {
+#final-score,
+#highscores li {
   font-family: 'Cormorant Infant', serif;
   font-size: 1.5rem;
 }
 
 #final-score {
   color: #db7558;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+}
+.btn-highscores {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }

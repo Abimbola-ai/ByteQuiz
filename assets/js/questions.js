@@ -1,6 +1,5 @@
-//questions.js
 // list of all questions, choices, and answers
-const questions = [
+window.questions = [
   {
     title: 'Commonly used data types DO NOT include:',
     choices: ['strings', 'booleans', 'alerts', 'numbers'],
