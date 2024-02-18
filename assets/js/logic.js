@@ -50,20 +50,6 @@ let questionsEl = document.getElementById('questions')
 let sfxRight = new Audio('assets/sfx/correct.wav')
 let sfxWrong = new Audio('assets/sfx/incorrect.wav')
 
-//Create a separate function for the timer
-function startTimer() {
-  timerId = setInterval(() => {
-    time--
-    updateTimerDisplay()
-    if (time <= 0) {
-      clearInterval(timerId)
-    }
-  }, 1000)
-}
-
-function updateTimerDisplay() {
-  document.getElementById('time').textContent = time
-}
 function startQuiz() {
   console.log('Start quiz button clicked')
   // hide start screen
@@ -75,7 +61,7 @@ function startQuiz() {
   // un-hide timer
   document.getElementById('timer').classList.remove('hide')
   // start timer
-  startTimer()
+  clockTick()
 
   // show starting time
   updateTimerDisplay()
@@ -165,51 +151,55 @@ function quizEnd() {
   document.getElementById('final-score').innerHTML = finalScore
 }
 
-// // add the code in this function to update the time, it should be called every second
-// function clockTick() {
-//   // right here - update time
+// add the code in this function to update the time, it should be called every second
+//Create a separate function for the timer
+function clockTick() {
+  timerId = setInterval(() => {
+    time--
+    updateTimerDisplay()
+    if (time <= 0) {
+      clearInterval(timerId)
+      quizEnd()
+    }
+  }, 1000)
+}
 
-//   // update the element to display the new time value
+function updateTimerDisplay() {
+  document.getElementById('time').textContent = time
+}
 
-//   // check if user ran out of time; if so, call the quizEnd() function
+// complete the steps to save the high score
 
-// }
+function saveHighScore() {
+  // get the value of the initials input box
+  let initials = document.getElementById('initials').value
+  let score = document.getElementById('final-score').textContent
+  // make sure the value of the initials input box wasn't empty
+  if (initials == '') {
+    alert('Please enter your initials')
+    return false
+  }
+  //Retrieve existing scores from local storage
+  let highScores = JSON.parse(localStorage.getItem('highScores')) || []
+  //Add the new score to the array
+  highScores.push({ initials: initials, score: score })
+  //Convert highscores into text format
+  localStorage.setItem('highScores', JSON.stringify(highScores))
+  //redirect user to high scores page
+  window.location.href = 'highscores.html'
+}
 
-// // complete the steps to save the high score
-// function saveHighScore() {
-
-//   // get the value of the initials input box
-
-//   // make sure the value of the initials input box wasn't empty
-
-//   // if it is not, check and see if there is a value of high scores in local storage
-
-//   // if there isn't any, then create a new array to store the high score
-
-//   // add the new initials and high score to the array
-
-//   // convert the array to a piece of text
-
-//   // store the high score in local storage
-
-//   // otherwise, if there are high scores stored in local storage,
-//   // retrieve the local storage value that has the high scores,
-//   // convert it back to an array,
-//   // add the new initials and high score to the array,
-//   // then convert the array back to a piece of text,
-//   // then store the new array (converted to text) back in local storage
-
-//   // finally, redirect the user to the high scores page.
-
-// }
-
-// // use this function when the user presses the "enter" key when submitting high score initials
-// function checkForEnter(event) {
-//   // if the user presses the enter key, then call the saveHighscore function
-// }
+// use this function when the user presses the "enter" key when submitting high score initials
+function checkForEnter(event) {
+  // if the user presses the enter key, then call the saveHighscore function
+  if (event.keyCode === 13) {
+    saveHighScore()
+  }
+}
 
 // user clicks button to submit initials
-// submitBtn.onclick = saveHighScore
+let submitBtn = document.getElementById('submit')
+submitBtn.onclick = saveHighScore
 
 //Get reference to the start quiz button
 let startBtn = document.getElementById('start')
