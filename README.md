@@ -5,19 +5,14 @@ This is a solution to a creating a Javascript Web API - Code Quiz assignment fro
 ## Table of contents
 
 - [Overview](#overview)
-
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
-
 - [Quiz Features](#quiz-features)
 - [Implementation Details](#implementation-details)
-
   - [Screenshot](#screenshot)
   - [Links](#links)
-
 - [Challenges Overcome](#challenges-overcome)
 - [Future Improvement](#future-improvement)
-
   - [Author](#author)
   - [Acknowledgements](#acknowwledgements)
 
