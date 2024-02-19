@@ -182,4 +182,17 @@ body {
 
     letter-spacing: 0.2rem;
   }
+  .btn-container {
+    flex-direction: column;
+  }
+  #question-title {
+    font-size: 1.5rem;
+  }
+  .choices button {
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+  #feedback {
+    font-size: 1rem;
+  }
 }

@@ -33,6 +33,49 @@ const questions = [
     choices: ['JavaScript', 'terminal / bash', 'for loops', 'console.log'],
     answer: 'console.log',
   },
+  {
+    title:
+      'Which of the following methods is used to access HTML elements using Javascript?',
+    choices: [
+      'getElementbyId()',
+      'getElementByClassName()',
+      'Both A and B',
+      'None of the above',
+    ],
+    answer: 'Both A and B',
+  },
+  {
+    title:
+      'Which of the following methods can be used to display data in some form using Javascript?',
+    choices: [
+      'document.write()',
+      'console.log()',
+      'window.alert()',
+      'All of the above',
+    ],
+    answer: 'All of the above',
+  },
+  {
+    title: 'How can a datatype be declared to be a constant type?',
+    choices: ['const', 'var', 'let', 'constant'],
+    answer: 'const',
+  },
+  {
+    title: 'What is the use of the noscript tag in Javascript?',
+    choices: [
+      'The contents are displayed by non-JS based browsers',
+      'clear all cookies and cache',
+      'Both A and B',
+      'None of the above',
+    ],
+    answer: 'The contents are displayed by non-JS based browsers',
+  },
+  {
+    title:
+      'When an operator’s value is NULL, the typeof returned by the unary operator is:',
+    choices: ['Boolean', 'undefined', 'object', 'integer'],
+    answer: 'object',
+  },
 ]
 
 // add variables that keep track of the quiz "state"
@@ -67,6 +110,16 @@ function startQuiz() {
   // call a function to show the next question
   getQuestion()
 }
+
+//Function to shuffle an array of question ising Fisher_Yates algorithm
+function shuffleQuestion(questions) {
+  for (let i = questions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[questions[i], questions[j]] = [questions[j], questions[i]]
+  }
+}
+
+shuffleQuestion(questions)
 
 function getQuestion() {
   // get current question object from array
