@@ -14,7 +14,7 @@ This is a solution to a creating a Javascript Web API - Code Quiz assignment fro
 - [Challenges Overcome](#challenges-overcome)
 - [Future Improvement](#future-improvement)
   - [Author](#author)
-  - [Acknowledgements](#acknowwledgements)
+  - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
