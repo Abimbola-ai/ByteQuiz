@@ -1,87 +1,93 @@
-# Assignment: JavaScript Web APIs - Code Quiz
+# ByteQuiz
 
-Edward Apostol, for SkillHat - February 2024
+This is a solution to a creating a Javascript Web API - Code Quiz assignment from SkillHat. _[SkillHat](https://skillhat.ca/)_ is the bridge between tech talent and industry needs.
 
-## Your Task
+## Table of contents
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+## Overview
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+### User Story
 
-## User Story
+As a coding student:
 
-```
-AS A coding student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+- I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+- SO THAT I can gauge my progress compared to my peers
 
-## Acceptance Criteria
+### Acceptance Criteria
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+- GIVEN I am taking a code quiz
+- WHEN I click the start button
+- THEN a timer starts and I am presented with a question
+- WHEN I answer a question
+- THEN I am presented with another question
+- WHEN I answer a question incorrectly
+- THEN time is subtracted from the clock
+- WHEN all questions are answered or the timer reaches 0
+- THEN the game is over
+- WHEN the game is over
+- THEN I can save my initials and my score
 
-## Mock-Up
+## **Quiz Features** :
 
-The following screen shot demonstrates the application functionality - refer to the image "04-web-apis-homework-demo.gif" in the assets folder for a reference; you can open up that image in your web browser.:
+- Interactive quiz interface.
+- Randomized questions to keep the quiz engaging.
+- Timer functionality to add a sense of urgency.
+- Immediate feedback on answer correctness.
+- Sound effects for correct and incorrect answers.
+- High score tracking and display.
+- Ability to clear high scores.
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+### Screenshot
 
-## Grading Requirements
+![1708303234493](image/README/1708303234493.png)
 
-This Challenge is graded based on the following criteria: 
+![1708303252567](image/README/1708303252567.png)![1708303265472](image/README/1708303265472.png)
 
-### Technical Acceptance Criteria: 40%
+### Links
 
-* Satisfies all of the preceding acceptance criteria.
+- [Solution GitHub URL](https://github.com/Abimbola-ai/ByteQuiz)
+- [Live Site URL](https://abimbola-ai.github.io/ByteQuiz/ 'live site')
 
-### Deployment: 32%
+## **Implementation Details** :
 
-* Application deployed at live URL.
+- Utilized HTML, CSS, and JavaScript.
+- Organized code into separate files for better maintainability.
+- Used local storage for high score persistence.
+- Implemented dynamic rendering of questions and choices.
+- Applied CSS styling for a visually appealing user interface.
+- Implemented event listeners for user interaction.
 
-* Application loads with no errors.
+## **Challenges Overcome** :
 
-* Application GitHub URL submitted.
+- Handling asynchronous behavior, such as timer updates.
+- Ensuring cross-browser compatibility for audio playback.
+- Managing local storage and handling empty or invalid inputs.
+- Optimizing performance for smooth user experience.
 
-* GitHub repository contains application code.
+## **Future Improvements** :
 
-### Application Quality: 15%
+- Adding more questions to expand the quiz bank.
+- Implementing user authentication for personalized experiences.
+- Enhancing accessibility features for users with disabilities.
+- Integrating social media sharing for score bragging.
+- Implementing responsive design for mobile devices.
 
-* Application user experience is intuitive and easy to navigate.
+## Author
 
-* Application user interface style is clean and polished.
+- LinkedIn - [ojikutu-olajumoke](https://www.https://www.linkedin.com/in/ojikutu-olajumoke/)
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+## Acknowledgments
 
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review via Google Classroom:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+A big thanks to SkillHat for providing a platform to challenge and enhance my abilities. Thanks also to my frontend instructor [Edward Apostol](https://www.linkedin.com/in/edwardapostol/ 'Instructor') and Teaching assistants Babatunde Koiki, Daniel. Design inspiration from [Canva](https://www.canva.com/)
