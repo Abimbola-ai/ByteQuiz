@@ -5,16 +5,21 @@ This is a solution to a creating a Javascript Web API - Code Quiz assignment fro
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+
+- [Quiz Features](#quiz-features)
+- [Implementation Details](#implementation-details)
+
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
+- [Challenges Overcome](#challenges-overcome)
+- [Future Improvement](#future-improvement)
+
+  - [Author](#author)
+  - [Acknowledgements](#acknowwledgements)
 
 ## Overview
 
@@ -49,6 +54,15 @@ As a coding student:
 - High score tracking and display.
 - Ability to clear high scores.
 
+## **Implementation Details** :
+
+- Utilized HTML, CSS, and JavaScript.
+- Organized code into separate files for better maintainability.
+- Used local storage for high score persistence.
+- Implemented dynamic rendering of questions and choices.
+- Applied CSS styling for a visually appealing user interface.
+- Implemented event listeners for user interaction.
+
 ### Screenshot
 
 ![1708303234493](image/README/1708303234493.png)
@@ -59,15 +73,6 @@ As a coding student:
 
 - [Solution GitHub URL](https://github.com/Abimbola-ai/ByteQuiz)
 - [Live Site URL](https://abimbola-ai.github.io/ByteQuiz/ 'live site')
-
-## **Implementation Details** :
-
-- Utilized HTML, CSS, and JavaScript.
-- Organized code into separate files for better maintainability.
-- Used local storage for high score persistence.
-- Implemented dynamic rendering of questions and choices.
-- Applied CSS styling for a visually appealing user interface.
-- Implemented event listeners for user interaction.
 
 ## **Challenges Overcome** :
 
